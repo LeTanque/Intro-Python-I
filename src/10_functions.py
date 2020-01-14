@@ -1,14 +1,17 @@
-# Write a function is_even that will return true if the passed-in number is even.
+# Write a function is_even that will return true if the passed-in
+# number is even.
 
 # YOUR CODE HERE
+# I hope the below functions satisfies the requirements of this
+# challenge. I wrote a simple function that checks type then
+# even or odd if it's a number.
 
 # Read a number from the keyboard
 userInput = input("Enter a number: ")
-# num = int(num)
+# num = int(num)    # I'm not assuming the input is a number
+
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
-
-
 # YOUR CODE HERE
 def is_even(hot_fiyah):
     # First lets do type checking for number, string, float

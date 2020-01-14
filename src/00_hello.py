@@ -1,3 +1,3 @@
 # Print "Hello, world!" to your terminal
 
-print("Hello, wuuuuurld!")
+print("Hello, friend!")

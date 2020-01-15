@@ -54,7 +54,9 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = [int(incoming_input) for incoming_input in x if int(incoming_input) % 2 == 0]
+y = [incoming_input for incoming_input in x if int(incoming_input) % 2 == 0]
+# Changing type to int is not necessary
+# y = [int(incoming_input) for incoming_input in x if int(incoming_input) % 2 == 0]
 
 print(y)
 

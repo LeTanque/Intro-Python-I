@@ -9,17 +9,17 @@ def f1(first_arg, second_arg):
     return first_arg + second_arg
 
 
-# print("\n", f1(1, 2), "\n")
+print("\n", f1(1, 2), "\n")
 
 
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum. Google for "python arbitrary arguments" and look for "*args"
 # YOUR CODE HERE
-# def f2(*argv):
-#     final_number = 0
-#     for arg in argv:
-#         final_number + arg
-#     return final_number
+def f2(*argv):
+    final_number = 0
+    for arg in argv:
+        final_number + arg
+    return final_number
 
 
 # print("\n", f2(1))                    # Should print 1
@@ -27,10 +27,9 @@ def f1(first_arg, second_arg):
 # print("\n", f2(1, 4, -12))            # Should print -7
 # print("\n", f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 
-
 # What thing do you have to add to make this work?
 a = [7, 6, 5, 4]
-# print("\n", f2(a))    # Should print 22
+print("\n", f2(a))    # Should print 22
 
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
@@ -41,8 +40,8 @@ def f3(arg1):
     print(arg1)
 
 
-# print("\n", f3(1, 2))  # Should print 3
-# print("\n", f3(8))     # Should print 9
+print("\n", f3(1, 2))  # Should print 3
+print("\n", f3(8))     # Should print 9
 
 
 # Write a function f4 that accepts an arbitrary number of keyword arguments and

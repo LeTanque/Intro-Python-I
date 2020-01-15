@@ -18,11 +18,9 @@ and does the following:
    the format that your program expects arguments to be given.
    Then exit the program.
 """
-
 import sys
 import calendar
 from datetime import datetime
-# print(dir(sys), dir(calendar))
 
 args = sys.argv
 

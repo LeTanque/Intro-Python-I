@@ -43,4 +43,3 @@ elif len(args) == 3:
     tc.prmonth(year, month)
 else:
     print("Should be in format `14_cal.py month [year]`")
-

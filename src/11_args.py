@@ -15,22 +15,22 @@ def f1(first_arg, second_arg):
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum. Google for "python arbitrary arguments" and look for "*args"
 # YOUR CODE HERE
-def f2(*argv):
-    final_number = 0
-    for arg in argv:
-        final_number + arg
-    return final_number
+# def f2(*argv):
+#     final_number = 0
+#     for arg in argv:
+#         final_number + arg
+#     return final_number
 
 
-print("\n", f2(1))                    # Should print 1
-print("\n", f2(1, 3))                 # Should print 4
-print("\n", f2(1, 4, -12))            # Should print -7
-print("\n", f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
+# print("\n", f2(1))                    # Should print 1
+# print("\n", f2(1, 3))                 # Should print 4
+# print("\n", f2(1, 4, -12))            # Should print -7
+# print("\n", f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 
 
 # What thing do you have to add to make this work?
 a = [7, 6, 5, 4]
-print("\n", f2(a))    # Should print 22
+# print("\n", f2(a))    # Should print 22
 
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
@@ -77,5 +77,7 @@ d = {
 
 # What thing do you have to add to make this work?
 # WIP
-for key, value in d.items():
-    f4(a=key, b=value)
+# for key, value in d.items():
+#     f4(a=key, b=value)
+
+f4(**d)

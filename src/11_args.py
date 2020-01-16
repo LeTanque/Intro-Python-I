@@ -9,7 +9,7 @@ def f1(first_arg, second_arg):
     return first_arg + second_arg
 
 
-print("\n", f1(1, 2), "\n")
+print('f1(1, 2): ', f1(1, 2))
 
 
 # Write a function f2 that takes any number of integer arguments and prints the
@@ -18,30 +18,33 @@ print("\n", f1(1, 2), "\n")
 def f2(*argv):
     final_number = 0
     for arg in argv:
-        final_number + arg
+        final_number = final_number + arg
     return final_number
 
 
-# print("\n", f2(1))                    # Should print 1
-# print("\n", f2(1, 3))                 # Should print 4
-# print("\n", f2(1, 4, -12))            # Should print -7
-# print("\n", f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
+print('f2(1): ', f2(1))                 # Should print 1
+print('f2(1, 3): ', f2(1, 3))           # Should print 4
+print('f2(1, 4, -12): ', f2(1, 4, -12))     # Should print -7
+print('f2(7, 9, 1, 3, 4, 9, 0): ', f2(7, 9, 1, 3, 4, 9, 0))   # Should print 33
 
 # What thing do you have to add to make this work?
 a = [7, 6, 5, 4]
-print("\n", f2(a))    # Should print 22
+print('f2(*a): ',  f2(*a))     # Should print 22
 
 
-# Write a function f3 that accepts either one or two arguments. If one argument,
+# Write a function f3 that accepts either one or two arguments. If one argumen
 # it returns that value plus 1. If two arguments, it returns the sum of the
 # arguments. Google "python default arguments" for a hint.
 # YOUR CODE HERE
-def f3(arg1):
-    print(arg1)
+def f3(arg1, *argv):
+    if len(argv) == 1:
+        return arg1 + argv[0]
+    else:
+        return arg1 + 1
 
 
-print("\n", f3(1, 2))  # Should print 3
-print("\n", f3(8))     # Should print 9
+print('f3(1, 2): ', f3(1, 2))       # Should print 3
+print('f3(8): ', f3(8))     # Should print 9
 
 
 # Write a function f4 that accepts an arbitrary number of keyword arguments and
